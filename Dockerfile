@@ -2,7 +2,7 @@ FROM debian:buster
 
 RUN apt-get update && \
     apt-get install -y sudo curl git openssh-client wget vim gnupg gnupg1 gnupg2 nmap mc \
-        postgresql postgresql-client postgresql-doc pgadmin3 phppgadmin && \
+        postgresql gettext postgresql-client postgresql-doc pgadmin3 phppgadmin && \
     echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config && \
     wget -c "https://github.com/fullstorydev/grpcurl/releases/download/v1.4.0/grpcurl_1.4.0_linux_x86_64.tar.gz" && \
     gzip -cd grpcurl_1.4.0_linux_x86_64.tar.gz | tar xfv - && \
