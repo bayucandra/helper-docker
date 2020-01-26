@@ -11,4 +11,5 @@ RUN apt-get update && \
     tar -C /usr/bin -xzf evans_linux_amd64.tar.gz && \
     wget -c "https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-debian10-4.2.1.tgz" && \
     tar -C /usr/local -xzf mongodb-linux-x86_64-debian10-4.2.1.tgz && \
-    mv /usr/local/mongodb-linux-x86_64-debian10-4.2.1 /usr/local/mongodb
+    mv /usr/local/mongodb-linux-x86_64-debian10-4.2.1 /usr/local/mongodb && \
+    rm -rf /tmp/*
